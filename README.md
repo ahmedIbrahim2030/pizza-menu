@@ -1,70 +1,118 @@
-# Getting Started with Create React App
+# Pizza Menu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based pizza menu application that showcases a curated selection of pizzas with ingredient details, pricing, and availability status. The app is designed as a clean, restaurant-style interface and serves as a simple demonstration of core React concepts such as component composition, data-driven rendering, and conditional styling.
+
+## Overview
+
+This project displays a menu of pizzas using a structured data model and renders each item as a card with:
+
+- Pizza name
+- Description of ingredients
+- Price
+- Image
+- Sold-out indicator when applicable
+
+It is ideal for learning front-end development patterns or as a starting point for a real restaurant ordering interface.
+
+## Features
+
+- Responsive restaurant-style layout
+- Reusable menu item components
+- Dynamic rendering from a central data source
+- Sold-out items visually marked as unavailable
+- Clean and minimal styling for an appealing UI
+
+## Tech Stack
+
+- React
+- JavaScript
+- CSS
+- Create React App
+
+## Project Structure
+
+```text
+pizza-menu/
+├── public/                 # Static assets and HTML template
+├── src/
+│   ├── App.js              # Main application component
+│   ├── App.css             # App styles
+│   ├── data.js             # Pizza menu data
+│   ├── index.js            # React entry point
+│   └── index.css           # Global styles
+├── package.json            # Project metadata and scripts
+├── README.md               # Project documentation
+├── .gitignore
+└── public/                 # Static files
+```
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed:
+
+- Node.js (v18 or later recommended)
+- npm
+
+### Installation
+
+```bash
+npm install
+```
+
+### Run the app locally
+
+```bash
+npm start
+```
+
+This starts the development server and opens the app in your browser at:
+
+```text
+http://localhost:3000
+```
+
+### Build for production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `build/` directory.
 
 ## Available Scripts
 
-In the project directory, you can run:
+```bash
+npm start
+npm test
+npm run build
+npm run eject
+```
 
-### `npm start`
+- `npm start` — launches the app in development mode
+- `npm test` — runs the test suite
+- `npm run build` — creates a production build
+- `npm run eject` — exposes the underlying Create React App configuration
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Data Model
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The menu content is stored in `src/data.js` as an array of pizza objects. Each object contains information such as:
 
-### `npm test`
+- `name`
+- `ingredients`
+- `price`
+- `photoName`
+- `soldOut`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This structure makes it easy to expand the menu with new items or modify existing entries.
 
-### `npm run build`
+## Learning Purpose
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This project is a beginner-friendly React application designed to demonstrate:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- JSX rendering
+- Component-based UI design
+- Data-driven lists
+- State and conditional rendering fundamentals
+- CSS styling in React applications
